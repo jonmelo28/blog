@@ -1,0 +1,21 @@
+{
+    "name": "jonatha/blog",
+    "description": "Projeto de blog desenvolvido para aprendizagem de criação de projeto",
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/"
+        },
+        "files": [
+            "app/config/config.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "jonmelo28",
+            "email": "jonmelo28@gmail.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "^3.8"
+    }
+}
