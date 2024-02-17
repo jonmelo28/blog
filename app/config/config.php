@@ -7,7 +7,8 @@
 
 //$file = 'local.php';
 
-if(preg_match('/.*(localhost|qa).+/', $_SERVER['REQUEST_URI']))
-{
+$prod = false;
 
-}
+$file = $prod ? 'prod.php' : 'local.php';
+
+require_once('env/'. $file);
